@@ -344,7 +344,13 @@ def play_game():
     print("New Game")
     print('')
     print("Money:", money)
+
     ante = int(input("Ante: "))
+
+    while ante > money/2:
+        ante = int(input("Un valid number. Enter valid Ante: "))
+
+
     money -= ante
 
     print("Your deck", player_deck)
