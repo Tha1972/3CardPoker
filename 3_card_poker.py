@@ -356,6 +356,7 @@ def play_game():
     print("Your deck", player_deck)
 
     cont = int(input('Fold(0) or Play(1): '))
+    print('')
 
     if int(cont) == 1:
         money -= ante
